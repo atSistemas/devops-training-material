@@ -41,17 +41,21 @@ Jenkins folder containing jenkins-related material
 
 ## Running a pipeline example as pipeline project with real code
 
-- Create Pipeline job: Jenkins >> New Item >> pipeline-example-three >> Pipeline job >> Ok >> Pipeline script >> Copy and paste [Jenkinsfile provided](https://github.com/atSistemas/devops-training-material/blob/master/jenkins/Jenkinsfile)
+- Create Pipeline job: Jenkins >> New Item >> pipeline-example-three >> Pipeline job >> Ok >> Pipeline script >> Copy and paste [Jenkinsfile provided](https://github.com/cmcornejocrespo/devops-training-material/blob/develop/jenkins/Jenkinsfile)
 
 ## Running a pipeline example as CI/CD pipeline project
 
-- Create Pipeline job: Jenkins >> New Item >> pipeline-example-ci-cd>> Pipeline job >> Ok >> Pipeline script >> Copy and paste [Jenkinsfile provided](https://github.com/atSistemas/devops-training-material/blob/master/jenkins/Jenkinsfile.complete.pipeline)
+- Create Pipeline job: Jenkins >> New Item >> pipeline-example-ci-cd>> Pipeline job >> Ok >> Pipeline script >> Copy and paste [Jenkinsfile provided](https://github.com/cmcornejocrespo/devops-training-material/blob/develop/jenkins/Jenkinsfile.complete.pipeline)
 
 ## Creating your first Multibranch Pipeline project
 
-- [What is a Jenkins Pipeline?](https://jenkins.io/doc/pipeline/tour/hello-world/)
-- Setup Github token: Create token [here](https://github.com/settings/tokens) with these scopes: repo:status and public_repo and copy the access token generated.
-- Select devops-training-material
+- Note the way to build different branches using docker
+- Create Multibranch Pipeline >> New Item >> Multibranch Pipeline >> Multibranch Pipeline >> Ok
+- Setup Github token: Create token [here](https://github.com/settings/tokens/new?scopes=repo,read:user,user:email) with these scopes: repo:status and public_repo and copy the access token generated.
+- Create credentials for github with your github username and the token as password
+- Type your github username as owner
+- Select devops-training-material 
+- Save
 
 ## Run previous examples using Blue Ocean UI
 
@@ -59,6 +63,7 @@ Jenkins folder containing jenkins-related material
 
 ### References
 - [Installing Jenkins](https://jenkins.io/doc/book/installing/)
+- [What is a Jenkins Pipeline?](https://jenkins.io/doc/pipeline/tour/hello-world/)
 - [Using a Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/#using-a-jenkinsfile) 
 - [Getting Started with Pipeline](https://jenkins.io/doc/book/pipeline/getting-started/#getting-started-with-pipeline) 
 - [Pipeline Examples](https://jenkins.io/doc/pipeline/examples/#pipeline-examples) 
